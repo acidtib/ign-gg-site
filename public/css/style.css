@@ -412,6 +412,10 @@ body.on {
 
 }
 
+.d-none {
+  display: none;
+}
+
 /* key frames */
 @keyframes scrolldown {
 	20% {
