@@ -3,32 +3,46 @@
 
 <head>
   <meta charset="utf-8">
-  <title>IGN GG - A Discord Bot</title>
+  <title>IGNGG - A Discord Bot</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" href="./public/img/logo.png">
 
-	<link href="./public/css/bootstrap.min.css" rel="stylesheet">
-
 	
-  <link rel="stylesheet" type="text/css" href="./public/css/coloring.css">
+	<link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+	
+  
 </head>
 <body>
 
   <main>
     <!-- navbar -->
 		<div class="container">
-			<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-				<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-					<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-					<span class="fs-4">IGN GG</span>
-				</a>
-	
-				<ul class="nav nav-pills">
-					<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Commands</a></li>
-				</ul>
-			</header>
+			<nav class="navbar navbar-dark navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="#">IGNGG</a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarScroll">
+						<ul class="navbar-nav ms-auto my-2 my-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Features</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Commands</a>
+							</li>
+							<li class="nav-item d-none">
+								<a class="nav-link disabled">Link</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</nav>
 		</div>
     <!-- navbar end -->
 
@@ -40,10 +54,13 @@
 				</div>
 
 				<div class="col-lg-6">
-					<h1 class="display-5 fw-bold lh-1 mb-3">IGN GG</h1>
+					<h1 class="display-5 fw-bold lh-1 mb-3">IGNGG</h1>
 					<p class="lead">Skip the Google search and give your community the ability to access Game Guides on your Discord server.</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-						<button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Add To Discord</button>
+						<button type="button" class="btn btn-primary">
+							<i class="bi bi-discord me-2"></i>
+							Add To Server
+						</button>
 					</div>
 				</div>
 			</div>
