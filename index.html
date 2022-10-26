@@ -21,7 +21,7 @@
 		<div class="container">
 			<nav class="navbar navbar-dark navbar-expand-lg">
 				<div class="container">
-					<a class="navbar-brand" href="#">IGNGG</a>
+					<a class="navbar-brand" href="/">IGNGG</a>
 
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -30,10 +30,10 @@
 					<div class="collapse navbar-collapse" id="navbarScroll">
 						<ul class="navbar-nav ms-auto my-2 my-lg-0">
 							<li class="nav-item">
-								<a class="nav-link" href="#">Features</a>
+								<a class="nav-link" href="#features">Features</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Commands</a>
+								<a class="nav-link" href="#commands">Commands</a>
 							</li>
 							<li class="nav-item d-none">
 								<a class="nav-link disabled">Link</a>
@@ -47,7 +47,7 @@
     <!-- navbar end -->
 
     <!-- jumbotron -->
-		<div class="container col-xxl-8 px-4 py-5">
+		<div class="container col-xxl-8 px-4 py-5 mb-4">
 			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 				<div class="col-10 col-sm-8 col-lg-6">
 					<img src="./public/img/img.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" width="700" height="500">
@@ -57,52 +57,83 @@
 					<h1 class="display-5 fw-bold lh-1 mb-3">IGNGG</h1>
 					<p class="lead">Skip the Google search and give your community the ability to access Game Guides on your Discord server.</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-						<button type="button" class="btn btn-primary">
+						<a href="https://discord.com/api/oauth2/authorize?client_id=1030253428573737041&permissions=0&scope=bot%20applications.commands" target="_blank" class="btn btn-primary">
 							<i class="bi bi-discord me-2"></i>
 							Add To Server
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
     <!-- jumbotron end -->
 
-    <span class="scroll-down"><i class="fas fa-arrow-down"></i></span>
+
+    <!-- features -->
+		<div class="container pt-5 mb-4" id="features">
+			<div class="row mb-5">
+				<div class="col-12 text-center">
+					<h1 class="display-4 fw-normal">Features</h1>
+				</div>
+			</div>
+
+			<div class="row mb-3 py-4">
+				<div class="col-md-6">
+					<h2 class="display-6">Game Guides</h2>
+					<p class="lead">And an even wittier subheading.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+
+			<div class="row mb-3 py-4">
+				<div class="col-md-6 text-center">
+					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+				</div>
+				<div class="col-md-6">
+					<h2 class="display-6">Games</h2>
+					<p class="lead">And an even wittier subheading.</p>
+				</div>
+			</div>
+
+			<div class="row mb-3 py-4">
+				<div class="col-md-6">
+					<h2 class="display-6">Articles</h2>
+					<p class="lead">And an even wittier subheading.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+				</div>
+			</div>
+
+			<div class="row mb-3 py-4">
+				<div class="col-md-6 text-center">
+					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+				</div>
+				<div class="col-md-6">
+					<h2 class="display-6">Entire Site</h2>
+					<p class="lead">And an even wittier subheading.</p>
+				</div>
+			</div>
+		</div>
+		<!-- features end -->
+
+
+		<!-- commands -->
+		<div class="container pt-5" id="commands">
+			<div class="row mb-5">
+				<div class="col-12 text-center">
+					<h1 class="display-4 fw-normal">Commands</h1>
+				</div>
+			</div>
+
+		</div>
+		<!-- commands end -->
   </main>
 
-  <!-- features -->
-  <div class="features-box">
-    <h1 class="features-t" id="features">Features</h1>
-    <div class="container">
-      <div class="features">
-        <div class="feature">
-          <img class="feature-img" src="./public/img/feature1.png"></img>
-          <div class="feature-info">
-            <h2 class="feature-info-t">Feature 1</h2>
-            <p class="feature-info-d">Write Here About Your Bot Features.</p>
-          </div>
-        </div>
-        <div class="feature">
-          <img class="feature-img" src="./public/img/feature2.svg"></img>
-          <div class="feature-info">
-            <h2 class="feature-info-t">Feature 2</h2>
-            <p class="feature-info-d">Write Here About Your Bot Features.</p>
-          </div>
-        </div>
-        <div class="feature">
-          <img class="feature-img" src="./public/img/feature3.svg"></img>
-          <div class="feature-info">
-            <h2 class="feature-info-t">Feature 3</h2>
-            <p class="feature-info-d">Write Here About Your Bot Features.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- features end -->
-
+  
   <!-- commands -->
-  <div class="container">
+  <div class="container d-none">
 		<div class="mt-4"></div>
 		<div class="row">
 				<div class="col-md-4 my-2">
@@ -341,7 +372,7 @@
   <!-- commands end -->
 
   <!-- footer -->
-  <div class="footer">
+  <div class="footer d-none">
     <div class="container">
       <div class="footer-items">
         <div class="footer-item">
