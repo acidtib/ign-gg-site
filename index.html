@@ -70,49 +70,53 @@
 
     <!-- features -->
 		<div class="container pt-5 mb-4" id="features">
-			<div class="row mb-5">
+			<div class="row mb-4">
 				<div class="col-12 text-center">
 					<h1 class="display-4 fw-normal">Features</h1>
 				</div>
 			</div>
 
-			<div class="row mb-3 py-4">
-				<div class="col-md-6">
-					<h2 class="display-6">Game Guides</h2>
-					<p class="lead">And an even wittier subheading.</p>
+			<div class="row">
+				<div class="col-md-6 mb-3">
+					<div class="card text-bg-dark h-100">
+						<div class="card-body">
+							<h5 class="card-title">Guides</h5>
+							<p class="card-text">Find guides by game with optional keyword for missions and objectives.</p>
+						</div>
+						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
+					</div>
 				</div>
-				<div class="col-md-6 text-center">
-					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+
+				<div class="col-md-6 mb-3">
+					<div class="card text-bg-dark h-100">
+						<div class="card-body">
+							<h5 class="card-title">Games</h5>
+							<p class="card-text">.....</p>
+						</div>
+						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
+					</div>
 				</div>
 			</div>
 
-			<div class="row mb-3 py-4">
-				<div class="col-md-6 text-center">
-					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
+			<div class="row">
+				<div class="col-md-6 mb-3">
+					<div class="card text-bg-dark h-100">
+						<div class="card-body">
+							<h5 class="card-title">Articles</h5>
+							<p class="card-text">.....</p>
+						</div>
+						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
+					</div>
 				</div>
-				<div class="col-md-6">
-					<h2 class="display-6">Games</h2>
-					<p class="lead">And an even wittier subheading.</p>
-				</div>
-			</div>
 
-			<div class="row mb-3 py-4">
-				<div class="col-md-6">
-					<h2 class="display-6">Articles</h2>
-					<p class="lead">And an even wittier subheading.</p>
-				</div>
-				<div class="col-md-6 text-center">
-					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
-				</div>
-			</div>
-
-			<div class="row mb-3 py-4">
-				<div class="col-md-6 text-center">
-					<img src="./public/img/game_guides.png" class="img-fluid" alt="...">
-				</div>
-				<div class="col-md-6">
-					<h2 class="display-6">Entire Site</h2>
-					<p class="lead">And an even wittier subheading.</p>
+				<div class="col-md-6 mb-3">
+					<div class="card text-bg-dark h-100">
+						<div class="card-body">
+							<h5 class="card-title">Entire Site</h5>
+							<p class="card-text">.....</p>
+						</div>
+						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -121,9 +125,52 @@
 
 		<!-- commands -->
 		<div class="container pt-5" id="commands">
-			<div class="row mb-5">
+			<div class="row mb-4">
 				<div class="col-12 text-center">
 					<h1 class="display-4 fw-normal">Commands</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="accordion text-bg-dark" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Accordion Item #1
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Accordion Item #2
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Accordion Item #3
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
