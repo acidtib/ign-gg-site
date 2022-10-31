@@ -91,7 +91,7 @@
 					<div class="card text-bg-dark h-100">
 						<div class="card-body">
 							<h5 class="card-title">Games</h5>
-							<p class="card-text">.....</p>
+							<p class="card-text">text here</p>
 						</div>
 						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
 					</div>
@@ -103,7 +103,7 @@
 					<div class="card text-bg-dark h-100">
 						<div class="card-body">
 							<h5 class="card-title">Articles</h5>
-							<p class="card-text">.....</p>
+							<p class="card-text">text here</p>
 						</div>
 						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
 					</div>
@@ -113,7 +113,7 @@
 					<div class="card text-bg-dark h-100">
 						<div class="card-body">
 							<h5 class="card-title">Entire Site</h5>
-							<p class="card-text">.....</p>
+							<p class="card-text">text here</p>
 						</div>
 						<img src="./public/img/game_guides.png" class="card-img-bottom" alt="...">
 					</div>
@@ -124,7 +124,7 @@
 
 
 		<!-- commands -->
-		<div class="container pt-5" id="commands">
+		<div class="container py-5" id="commands">
 			<div class="row mb-4">
 				<div class="col-12 text-center">
 					<h1 class="display-4 fw-normal">Commands</h1>
@@ -161,7 +161,7 @@
 									<div id="collapseIgnGames" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
-											<p class="text-muted mb-3">/ign-games game:Cyberpunk 2077</p>
+											<p class="text-muted mb-0">/ign-games game:Cyberpunk 2077</p>
 										</div>
 									</div>
 								</div>
@@ -175,7 +175,7 @@
 									<div id="collapseIgnArticles" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
-											<p class="text-muted mb-3">/ign-articles search:CD Projekt Red</p>
+											<p class="text-muted mb-0">/ign-articles search:CD Projekt Red</p>
 										</div>
 									</div>
 								</div>
@@ -189,7 +189,7 @@
 									<div id="collapseIgnSite" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
-											<p class="text-muted mb-3">/ign-site search:The Witcher season 2 review</p>
+											<p class="text-muted mb-0">/ign-site search:The Witcher season 2 review</p>
 										</div>
 									</div>
 								</div>
@@ -203,276 +203,43 @@
 
 		</div>
 		<!-- commands end -->
-  </main>
 
-  
-  <!-- commands -->
-  <div class="container d-none">
-		<div class="mt-4"></div>
-		<div class="row">
-				<div class="col-md-4 my-2">
-						<div class="card p-3">
-								<h5>Select Commands Category</h5>
-								<hr />
-								<button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
-								
-										<button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
-								
-										<button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
-								
-										<button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
-								
-										<button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
-								
-						</div>
+
+		<!-- footer -->
+		<div class="container">
+			<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+				<div class="col mb-3">
+					<a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
+						IGNGG
+					</a>
+					<p class="text-muted d-none">© 2022</p>
 				</div>
-				<div class="col-md-8 my-2">
-						<input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
-						
-								
-										<div class="mt-4"></div>
-								
-								<div class="commands-section" id="Category0">
-										
-												
-												<div class="accordion accordion-flush mt-2" id="ban">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button text-bg-dark collapsed" data-bs-toggle="collapse" data-bs-target="#fban">
-																				 /ban&nbsp; <span class="command-descreption">- ban a member</span>
-																		</button>
-																</h2>
-																<div id="fban" class="accordion-collapse collapse" data-bs-parent="#ban">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/ban @memebr<br>
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-												
-												<div class="accordion accordion-flush mt-2" id="kick">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkick">
-																				 /kick&nbsp; <span class="command-descreption">- kick a member</span>
-																		</button>
-																</h2>
-																<div id="fkick" class="accordion-collapse collapse" data-bs-parent="#kick">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/kick @memebr
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-												
-												<div class="accordion accordion-flush mt-2" id="mute">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmute">
-																				 /mute&nbsp; <span class="command-descreption">- mute a member</span>
-																		</button>
-																</h2>
-																<div id="fmute" class="accordion-collapse collapse" data-bs-parent="#mute">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/mute @member
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-												
-								</div>
-						
-								
-								<div class="commands-section" id="Category1">
-										
-												
-												<div class="accordion accordion-flush mt-2" id="help">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-																				 /help&nbsp; <span class="command-descreption">- Bot&#39;s help menu</span>
-																		</button>
-																</h2>
-																<div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/help<br>/help command:ban
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-												
-												<div class="accordion accordion-flush mt-2" id="ping">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
-																				 /ping&nbsp; <span class="command-descreption">- Get bot&#39;s host server status &amp; latency</span>
-																		</button>
-																</h2>
-																<div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/ping
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-												
-												<div class="accordion accordion-flush mt-2" id="invite">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvite">
-																				 /invite&nbsp; <span class="command-descreption">- Invite bot to your server</span>
-																		</button>
-																</h2>
-																<div id="finvite" class="accordion-collapse collapse" data-bs-parent="#invite">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/invite
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-								</div>
-						
-								
-								<div class="commands-section" id="Category2">
-										
-												
-												<div class="accordion accordion-flush mt-2" id="leaderboard">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fleaderboard">
-																				 /leaderboard&nbsp; <span class="command-descreption">- Get your servers leaderboards </span>
-																		</button>
-																</h2>
-																<div id="fleaderboard" class="accordion-collapse collapse" data-bs-parent="#leaderboard">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/leaderboard
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-								</div>
-						
-								
-								<div class="commands-section" id="Category3">
-										
-												
-												<div class="accordion accordion-flush mt-2" id="reactionrole">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
-																				<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; /reactionrole&nbsp; <span class="command-descreption">- start the setup process for creating a reaction role</span>
-																		</button>
-																</h2>
-																<div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/reactionrole
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-												
-												<div class="accordion accordion-flush mt-2" id="slowmode">
-														<div class="accordion-item">
-																<h2 class="accordion-header" id="flush-headingOne">
-																		<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fslowmode">
-																				<span class='badge badge-vip rounded-pill'><i class='far fa-crown'></i></span>&nbsp; /slowmode&nbsp; <span class="command-descreption">- add slowmode for a channel</span>
-																		</button>
-																</h2>
-																<div id="fslowmode" class="accordion-collapse collapse" data-bs-parent="#slowmode">
-																		<div class="accordion-body">
-																				<span>Usage Examples:</span> <br />
-																				<span class="examples">
-																						
-																								/slowmode :time
-																						
-																				</span>
-																		</div>
-																</div>
-														</div>
-												</div>
-										
-								</div>
-						
+		
+				<div class="col mb-3">
+		
 				</div>
+
+				<div class="col mb-3">
+		
+				</div>
+
+				<div class="col mb-3">
+		
+				</div>
+		
+				<div class="col mb-3">
+					<h5>Github</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="https://github.com/acidtib/ign-gg-site" target="_blank" class="nav-link p-0 text-muted">Website</a></li>
+						<li class="nav-item mb-2"><a href="https://github.com/acidtib/ign-gg" target="_blank" class="nav-link p-0 text-muted">Discord Bot</a></li>
+						<li class="nav-item mb-2"><a href="https://github.com/acidtib/ign-search-proxy" target="_blank" class="nav-link p-0 text-muted">IGG Search Proxy</a></li>
+					</ul>
+				</div>
+		
+			</footer>
 		</div>
-</div>
-  <!-- commands end -->
-
-  <!-- footer -->
-  <div class="footer d-none">
-    <div class="container">
-      <div class="footer-items">
-        <div class="footer-item">
-          <span>Partners</span>
-          <ul class="footer-ul">
-            <li><a href="#">Partner 1</a></li>
-            <li><a href="#">Partner 2</a></li>
-            <li><a href="#">Partner 3</a></li>
-            <li><a href="#">Partner 4</a></li>
-            <li><a href="#">Partner 5</a></li>
-          </ul>
-        </div>
-        <div class="footer-item">
-          <span>Links</span>
-          <ul class="footer-ul">
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Youtube</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- footer end -->
+  	<!-- footer end -->
+  </main>
 
   <script type="text/javascript" src="./public/js/bootstrap.bundle.min.js"></script>
 </body>
