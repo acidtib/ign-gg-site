@@ -51,3 +51,8 @@ body {
 	background-color: #7047E8;
 	border-color: #7047E8;
 }
+
+.btn-purple:hover {
+	background-color: #5F40E2;
+	border-color: #5F40E2;
+}
