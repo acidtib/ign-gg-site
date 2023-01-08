@@ -2,20 +2,20 @@
 <html>
 
 <head>
-  	<meta charset="utf-8">
-  	<title>IGNGG - A Discord Bot</title>
+	<meta charset="utf-8">
+	<title>IGNGG - A Discord Bot</title>
 
-  	<meta name="description" content="Discord Bot for finding Game Guides directly in chat.">
+	<meta name="description" content="Discord Bot for finding Game Guides directly in chat.">
 	<meta name="keywords" content="discord, discord bot, game guides, games, ign">
 
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  	<link rel="icon" type="image/png" href="./public/img/IGNGG-Logo_avatar.png">
+	<link rel="icon" type="image/png" href="./public/img/IGNGG-Logo_avatar.png">
 
-	
+
 	<link rel="stylesheet" type="text/css" href="./public/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
-	
+
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="IGNGG - A Discord Bot" />
 	<meta name="twitter:description" content="Discord Bot for finding Game Guides directly in chat." />
@@ -30,18 +30,22 @@
 
 	<link href="https://igngg.com/" rel="canonical" />
 </head>
+
 <body>
 
-  <main>
-    <!-- navbar -->
+	<main>
+		<!-- navbar -->
 		<div class="container">
 			<nav class="navbar navbar-dark navbar-expand-lg">
 				<div class="container">
 					<a class="navbar-brand" href="/">
-						<img src="./public/img/IGNGG-Logo.png" alt="IGNGG Logo" height="30" class="d-inline-block align-text-top">
+						<img src="./public/img/IGNGG-Logo.png" alt="IGNGG Logo" height="30"
+							class="d-inline-block align-text-top">
 					</a>
-				  
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
@@ -58,24 +62,27 @@
 							</li>
 						</ul>
 					</div>
-			
+
 				</div>
 			</nav>
 		</div>
-    <!-- navbar end -->
+		<!-- navbar end -->
 
-    <!-- jumbotron -->
+		<!-- jumbotron -->
 		<div class="container col-xxl-8 px-4 py-5 mb-4">
 			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
 				<div class="col-12 col-sm-8 col-lg-6">
-					<img src="./public/img/IGNGG-example.png" class="d-block mx-lg-auto img-fluid" alt="IGNGG Example" loading="lazy" width="700" height="500">
+					<img src="./public/img/IGNGG-example.png" class="d-block mx-lg-auto img-fluid" alt="IGNGG Example"
+						loading="lazy" width="700" height="500">
 				</div>
 
 				<div class="col-lg-6">
 					<h1 class="display-5 fw-bold lh-1 mb-3">IGNGG</h1>
-					<p class="lead">Provide your Discord community with the ability to access Game Guides directly, rather than searching on Google.</p>
+					<p class="lead">Provide your Discord community with the ability to access Game Guides directly,
+						rather than searching on Google.</p>
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-						<a href="https://discord.com/api/oauth2/authorize?client_id=1030253428573737041&permissions=0&scope=bot%20applications.commands" target="_blank" class="btn btn-primary btn-purple">
+						<a href="https://discord.com/api/oauth2/authorize?client_id=1030253428573737041&permissions=0&scope=bot%20applications.commands"
+							target="_blank" class="btn btn-primary btn-purple">
 							<i class="bi bi-discord me-2"></i>
 							Add To Server
 						</a>
@@ -83,10 +90,10 @@
 				</div>
 			</div>
 		</div>
-    <!-- jumbotron end -->
+		<!-- jumbotron end -->
 
 
-    <!-- features -->
+		<!-- features -->
 		<div class="container pt-5 mb-4" id="features">
 			<div class="row mb-4">
 				<div class="col-12 text-center">
@@ -99,7 +106,8 @@
 					<div class="card text-bg-dark h-100">
 						<div class="card-body">
 							<h5 class="card-title">Guides</h5>
-							<p class="card-text">Find guides by game with optional keyword for missions and objectives.</p>
+							<p class="card-text">Find guides by game with optional keyword for missions and objectives.
+							</p>
 						</div>
 						<img src="./public/img/ign-guides.png" class="card-img-bottom" alt="...">
 					</div>
@@ -156,27 +164,34 @@
 							<div class="accordion accordion-flush" id="accordionCommands">
 								<div class="accordion-item text-bg-dark">
 									<h2 class="accordion-header" id="headingOne">
-										<button class="accordion-button text-bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIgnGuides" aria-expanded="true" aria-controls="collapseIgnGuides">
+										<button class="accordion-button text-bg-dark" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseIgnGuides"
+											aria-expanded="true" aria-controls="collapseIgnGuides">
 											/ign-guides <span class="text-muted ps-1">- Search Game Guides</span>
 										</button>
 									</h2>
-									<div id="collapseIgnGuides" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionCommands">
+									<div id="collapseIgnGuides" class="accordion-collapse collapse show"
+										aria-labelledby="headingOne" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
 											<p class="text-muted mb-3">/ign-guides game:Cyberpunk 2077</p>
 											<p class="mb-0">with mission or objective:</p>
-											<p class="text-muted mb-0">/ign-guides game:Cyberpunk 2077 keyword:Big in Japan</p>
+											<p class="text-muted mb-0">/ign-guides game:Cyberpunk 2077 keyword:Big in
+												Japan</p>
 										</div>
 									</div>
 								</div>
 
 								<div class="accordion-item text-bg-dark">
 									<h2 class="accordion-header" id="headingTwo">
-										<button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIgnGames" aria-expanded="false" aria-controls="collapseIgnGames">
+										<button class="accordion-button text-bg-dark collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseIgnGames"
+											aria-expanded="false" aria-controls="collapseIgnGames">
 											/ign-games <span class="text-muted ps-1">- Search Games</span>
 										</button>
 									</h2>
-									<div id="collapseIgnGames" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCommands">
+									<div id="collapseIgnGames" class="accordion-collapse collapse"
+										aria-labelledby="headingTwo" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
 											<p class="text-muted mb-0">/ign-games game:Cyberpunk 2077</p>
@@ -186,11 +201,14 @@
 
 								<div class="accordion-item text-bg-dark">
 									<h2 class="accordion-header" id="headingThree">
-										<button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIgnArticles" aria-expanded="false" aria-controls="collapseIgnArticles">
+										<button class="accordion-button text-bg-dark collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseIgnArticles"
+											aria-expanded="false" aria-controls="collapseIgnArticles">
 											/ign-articles <span class="text-muted ps-1">- Search Articles</span>
 										</button>
 									</h2>
-									<div id="collapseIgnArticles" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
+									<div id="collapseIgnArticles" class="accordion-collapse collapse"
+										aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
 											<p class="text-muted mb-0">/ign-articles search:CD Projekt Red</p>
@@ -200,11 +218,14 @@
 
 								<div class="accordion-item text-bg-dark">
 									<h2 class="accordion-header" id="headingThree">
-										<button class="accordion-button text-bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIgnSite" aria-expanded="false" aria-controls="collapseIgnSite">
+										<button class="accordion-button text-bg-dark collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapseIgnSite"
+											aria-expanded="false" aria-controls="collapseIgnSite">
 											/ign-site <span class="text-muted ps-1">- Search Entire Site</span>
 										</button>
 									</h2>
-									<div id="collapseIgnSite" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
+									<div id="collapseIgnSite" class="accordion-collapse collapse"
+										aria-labelledby="headingThree" data-bs-parent="#accordionCommands">
 										<div class="accordion-body">
 											<h6>Usage Example:</h6>
 											<p class="text-muted mb-0">/ign-site search:The Witcher season 2 review</p>
@@ -215,7 +236,7 @@
 						</div>
 					</div>
 
-					
+
 				</div>
 			</div>
 
@@ -224,25 +245,29 @@
 
 
 		<!-- footer -->
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">IGNGG</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="./public/img/IGNGG-Logo_avatar.png" alt="IGNGG Logo" class="bi me-2" width="45">
-        </a>
-    
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="https://github.com/acidtib/ign-gg-site" target="_blank" class="nav-link px-2 text-muted">Website</a></li>
-          <li class="nav-item"><a href="https://github.com/acidtib/ign-gg" target="_blank" class="nav-link px-2 text-muted">Discord Bot</a></li>
-          <li class="nav-item"><a href="https://github.com/acidtib/ign-search-proxy" target="_blank" class="nav-link px-2 text-muted">Search API</a></li>
-        </ul>
-      </footer>
-    </div>
-  	<!-- footer end -->
-  </main>
+		<div class="container">
+			<footer class="row py-3 my-4 border-top">
+				<div class="col-md-6 mb-3">
+					<p class="mb-1 text-muted">IGNGG</p>
+					<p class="mb-0">Made by: <a href="https://dainelvera.com" target="_blank">Dainel Vera</a></p>
+				</div>
 
-  <script type="text/javascript" src="./public/js/bootstrap.bundle.min.js"></script>
+				<div class="col-md-6">
+					<ul class="nav ">
+						<li class="nav-item"><a href="https://github.com/acidtib/ign-gg-site" target="_blank"
+								class="nav-link px-2 ps-0 text-muted">Website</a></li>
+						<li class="nav-item"><a href="https://github.com/acidtib/ign-gg" target="_blank"
+								class="nav-link px-2 text-muted">Discord Bot</a></li>
+						<li class="nav-item"><a href="https://github.com/acidtib/ign-search-proxy" target="_blank"
+								class="nav-link px-2 text-muted">Search API</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- footer end -->
+	</main>
+
+	<script type="text/javascript" src="./public/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
